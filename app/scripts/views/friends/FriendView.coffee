@@ -14,7 +14,7 @@ define (require)->
 		template: friendTemplate
 
 		events:
-			'click .friend-item__send': 'sendToFriend'
+			'click': 'sendToFriend'
 
 
 		sendToFriend: ()->

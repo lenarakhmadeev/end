@@ -1,31 +1,35 @@
 
-@import "bootstrap/bootstrap";
-@import "bootstrap/responsive";
+@import "compass/css3";
 
 .b-items-list {
 
 }
 
 	.b-item {
-		@extend .span4;
+		width: 32%;
 		float: left;
+		margin: 3px;
 
-		@include border-radius(5px);
-		border: 1px solid #aaaaaa;
 
 	}
 
 	.b-item_selected {
-		border: 1px red solid;
+		@include box-shadow(0 0 6px rgb(0, 0, 0));
+		//background-color: rgb(141, 141, 141);
 	}
 
 		.b-item__image {
-			@extend .img-polaroid;
-
-			@include square(100px);
+			width: 163px;
+			height: 163px;
+			padding: 5px;
 
 		}
 
 		.b-item__title {
 			text-align: center;
 		}
+
+			.b-item__title:first-letter {
+				text-transform: uppercase;
+			}
+

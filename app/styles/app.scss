@@ -6,9 +6,13 @@
 	@extend .row-fluid;
 }
 
-	.b-app__items-place {
+	.b-app__col1 {
 		@extend .span8;
 		float: left;
+	}
+
+	.b-app__items-place {
+
 	}
 
 	.b-app__friends-panel-place {

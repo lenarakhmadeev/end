@@ -42,10 +42,13 @@ define (require)->
 		postItem: (friendModel)->
 			itemModel = @itemsCollection.getSelectedItem()
 
+			message = 'Очень важно иметь при себе ' + itemModel.get('text') +
+			'. Отправь другу предмет через приложение: vk.com/app3293423'
+
 			params =
-				owner_id: friendModel.get 'uid'
-				message: 'Очень важно иметь при себе ' + itemModel.get 'text'
-				attachments: itemModel.get 'attach'
+				#owner_id: friendModel.get 'uid'
+				message: message
+				attachments: itemModel.get('attach') + ', vk.com/app3293423'
 
 			vk.api 'wall.post', params, ()->
 				# todo если ошибка, сообщить

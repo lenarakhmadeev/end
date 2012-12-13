@@ -1,6 +1,9 @@
 
-.friends-list {
+@import "bootstrap/bootstrap";
+@import "bootstrap/responsive";
 
+.b-friends-list {
+	margin-left: 0;
 }
 
 	.friends-list__friends {
@@ -8,15 +11,24 @@
 	}
 
 		.friend-item {
-
+			list-style-type: none;
+			margin-top: 10px;
+			cursor: pointer;
 		}
 
 			.friend-item__name {
+				min-height: 60px;
+				//margin-left: 60px;
 
+				color: #2B587A;
+
+				font-weight: bold;
+				line-height: 140%;
+				font-size: 9pt;
 			}
 
 			.friend-item__send {
-
+				@extend .btn;
 			}
 
 	.friends-list__show-more {
