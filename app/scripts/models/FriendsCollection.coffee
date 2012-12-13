@@ -12,7 +12,7 @@ define (require)->
 
 		initialize: ()->
 			@own = new Backbone.Model
-				showCount: 5
+				showCount: 10
 
 
 		fetch: ()->

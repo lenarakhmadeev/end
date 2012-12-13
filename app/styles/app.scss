@@ -4,6 +4,7 @@
 
 .b-app {
 	@extend .row-fluid;
+	padding: 20px;
 }
 
 	.b-app__col1 {
@@ -11,8 +12,15 @@
 		float: left;
 	}
 
-	.b-app__items-place {
+		.b-app__desc {
+			font-size: 16pt;
+			color: #666;
+		}
 
+	.b-app__items-place {
+		//border: 1px solid red;
+		height: 600px;
+		overflow-y: scroll;
 	}
 
 	.b-app__friends-panel-place {
