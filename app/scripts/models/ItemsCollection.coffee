@@ -107,6 +107,30 @@ define (require)->
 					selected: false
 					text: 'фонарь'
 				}
+				# 13
+				{
+					name: 'condom'
+					attach: 'photo180648724_293484654'
+					img: 'images/thumbs/condom.png'
+					selected: false
+					text: 'защита от комаров'
+				}
+				# 14
+				{
+					name: 'axe'
+					attach: 'photo180648724_293484875'
+					img: 'images/thumbs/axe.png'
+					selected: false
+					text: 'топор'
+				}
+				# 15
+				{
+					name: 'sleep'
+					attach: 'photo180648724_293485057'
+					img: 'images/thumbs/sleep.png'
+					selected: false
+					text: 'спальный мешок'
+				}
 			]
 
 
