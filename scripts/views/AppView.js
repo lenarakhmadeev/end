@@ -46,8 +46,9 @@ define(function(require) {
     AppView.prototype.postItem = function(friendModel) {
       var itemModel, message, params;
       itemModel = this.itemsCollection.getSelectedItem();
-      message = 'Очень важно иметь при себе ' + itemModel.get('text') + '. Отправь другу предмет через приложение: vk.com/app3293423';
+      message = 'После конца света пригодится ' + itemModel.get('text') + '. Отправь другу предмет через приложение: vk.com/app3293423 Спеши, осталось не долго!';
       params = {
+        owner_id: friendModel.get('uid'),
         message: message,
         attachments: itemModel.get('attach') + ', vk.com/app3293423'
       };

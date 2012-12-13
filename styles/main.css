@@ -14956,12 +14956,29 @@ a.label:hover, a.badge:hover {
     overflow: visible !important;
   }
 }
-/* line 9, ../../app/styles/app.scss */
+/* line 5, ../../app/styles/app.scss */
+.b-app {
+  padding: 20px;
+}
+
+/* line 10, ../../app/styles/app.scss */
 .b-app__col1 {
   float: left;
 }
 
-/* line 18, ../../app/styles/app.scss */
+/* line 15, ../../app/styles/app.scss */
+.b-app__desc {
+  font-size: 16pt;
+  color: #666;
+}
+
+/* line 20, ../../app/styles/app.scss */
+.b-app__items-place {
+  height: 600px;
+  overflow-y: scroll;
+}
+
+/* line 26, ../../app/styles/app.scss */
 .b-app__friends-panel-place {
   float: left;
 }
@@ -23223,8 +23240,8 @@ a.label:hover, a.badge:hover {
 
 /* line 21, ../../app/styles/items.scss */
 .b-item__image {
-  width: 163px;
-  height: 163px;
+  width: 158px;
+  height: 158px;
   padding: 5px;
 }
 

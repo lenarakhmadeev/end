@@ -16265,7 +16265,7 @@ define('text',['module'], function (module) {
     return text;
 });
 
-define('text!templates/app.html',[],function () { return '<div class="b-app__col1">\n\t<div class="b-app__desc">\n\t\tОтправь другу предмет, который ему пригодится после конца света! Поспеши!\n\n\t</div>\n\t<div class="b-app__items-place"></div>\n</div>\n\n<div class="b-app__friends-panel-place"></div>';});
+define('text!templates/app.html',[],function () { return '<div class="b-app__col1">\n\t<div class="b-app__desc">\n\t\tОтправь другу предмет, который ему пригодится после конца света!\n\t\tВыбери предмет и кликни на друга!\n\t</div>\n\t<div class="b-app__items-place"></div>\n</div>\n\n<div class="b-app__friends-panel-place"></div>';});
 
 define('text!templates/item.html',[],function () { return '<img class="b-item__image" src="<%= img %>" />\n<div class="b-item__title"><%= text %></div>';});
 
@@ -16412,6 +16412,78 @@ define('models/ItemsCollection',['require','Backbone','models/ItemModel','_'],fu
           img: 'images/fire.jpg',
           selected: false,
           text: 'спички'
+        }, {
+          name: 'crem',
+          attach: 'photo180648724_293482368',
+          img: 'images/thumbs/crem.png',
+          selected: false,
+          text: 'кремень'
+        }, {
+          name: 'gun',
+          attach: 'photo180648724_293482369',
+          img: 'images/thumbs/gun.png',
+          selected: false,
+          text: 'пистолет'
+        }, {
+          name: 'dollar',
+          attach: 'photo180648724_293482691',
+          img: 'images/thumbs/dollar.png',
+          selected: false,
+          text: 'растопка'
+        }, {
+          name: 'bear',
+          attach: 'photo180648724_293483032',
+          img: 'images/thumbs/bear.png',
+          selected: false,
+          text: 'Беар Гриллс'
+        }, {
+          name: 'bread',
+          attach: 'photo180648724_293483338',
+          img: 'images/thumbs/bread.png',
+          selected: false,
+          text: 'сухари'
+        }, {
+          name: 'shoes',
+          attach: 'photo180648724_293483588',
+          img: 'images/thumbs/shoes.png',
+          selected: false,
+          text: 'теплая обувь'
+        }, {
+          name: 'bottle',
+          attach: 'photo180648724_293483830',
+          img: 'images/thumbs/bottle.png',
+          selected: false,
+          text: 'фляжка'
+        }, {
+          name: 'kettle',
+          attach: 'photo180648724_293483988',
+          img: 'images/thumbs/kettle.png',
+          selected: false,
+          text: 'котелок'
+        }, {
+          name: 'light',
+          attach: 'photo180648724_293484126',
+          img: 'images/thumbs/light.png',
+          selected: false,
+          text: 'фонарь'
+        }, {
+          name: 'condom',
+          attach: 'photo180648724_293484654',
+          img: 'images/thumbs/condom.png',
+          selected: false,
+          text: 'защита от комаров'
+        }, {
+          name: 'axe',
+          attach: 'photo180648724_293484875',
+          img: 'images/thumbs/axe.png',
+          selected: false,
+          text: 'топор'
+        }, {
+          name: 'sleep',
+          attach: 'photo180648724_293485057',
+          img: 'images/thumbs/sleep.png',
+          selected: false,
+          text: 'спальный мешок'
         }
       ]);
     };
@@ -16618,7 +16690,7 @@ define('models/FriendsCollection',['require','Backbone','vk','models/FriendModel
 
     FriendsCollection.prototype.initialize = function() {
       return this.own = new Backbone.Model({
-        showCount: 5
+        showCount: 10
       });
     };
 
@@ -16709,8 +16781,9 @@ define('views/AppView',['require','views/View','tpl!templates/app.html','views/i
     AppView.prototype.postItem = function(friendModel) {
       var itemModel, message, params;
       itemModel = this.itemsCollection.getSelectedItem();
-      message = 'Очень важно иметь при себе ' + itemModel.get('text') + '. Отправь другу предмет через приложение: vk.com/app3293423';
+      message = 'После конца света пригодится ' + itemModel.get('text') + '. Отправь другу предмет через приложение: vk.com/app3293423 Спеши, осталось не долго!';
       params = {
+        owner_id: friendModel.get('uid'),
         message: message,
         attachments: itemModel.get('attach') + ', vk.com/app3293423'
       };

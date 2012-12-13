@@ -19,7 +19,7 @@ define(function(require) {
 
     FriendsCollection.prototype.initialize = function() {
       return this.own = new Backbone.Model({
-        showCount: 5
+        showCount: 10
       });
     };
 

@@ -36,6 +36,78 @@ define(function(require) {
           img: 'images/fire.jpg',
           selected: false,
           text: 'спички'
+        }, {
+          name: 'crem',
+          attach: 'photo180648724_293482368',
+          img: 'images/thumbs/crem.png',
+          selected: false,
+          text: 'кремень'
+        }, {
+          name: 'gun',
+          attach: 'photo180648724_293482369',
+          img: 'images/thumbs/gun.png',
+          selected: false,
+          text: 'пистолет'
+        }, {
+          name: 'dollar',
+          attach: 'photo180648724_293482691',
+          img: 'images/thumbs/dollar.png',
+          selected: false,
+          text: 'растопка'
+        }, {
+          name: 'bear',
+          attach: 'photo180648724_293483032',
+          img: 'images/thumbs/bear.png',
+          selected: false,
+          text: 'Беар Гриллс'
+        }, {
+          name: 'bread',
+          attach: 'photo180648724_293483338',
+          img: 'images/thumbs/bread.png',
+          selected: false,
+          text: 'сухари'
+        }, {
+          name: 'shoes',
+          attach: 'photo180648724_293483588',
+          img: 'images/thumbs/shoes.png',
+          selected: false,
+          text: 'теплая обувь'
+        }, {
+          name: 'bottle',
+          attach: 'photo180648724_293483830',
+          img: 'images/thumbs/bottle.png',
+          selected: false,
+          text: 'фляжка'
+        }, {
+          name: 'kettle',
+          attach: 'photo180648724_293483988',
+          img: 'images/thumbs/kettle.png',
+          selected: false,
+          text: 'котелок'
+        }, {
+          name: 'light',
+          attach: 'photo180648724_293484126',
+          img: 'images/thumbs/light.png',
+          selected: false,
+          text: 'фонарь'
+        }, {
+          name: 'condom',
+          attach: 'photo180648724_293484654',
+          img: 'images/thumbs/condom.png',
+          selected: false,
+          text: 'защита от комаров'
+        }, {
+          name: 'axe',
+          attach: 'photo180648724_293484875',
+          img: 'images/thumbs/axe.png',
+          selected: false,
+          text: 'топор'
+        }, {
+          name: 'sleep',
+          attach: 'photo180648724_293485057',
+          img: 'images/thumbs/sleep.png',
+          selected: false,
+          text: 'спальный мешок'
         }
       ]);
     };
