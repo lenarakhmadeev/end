@@ -1,0 +1,20 @@
+
+@import "bootstrap/bootstrap";
+@import "bootstrap/responsive";
+
+.b-app {
+	@extend .row-fluid;
+}
+
+	.b-app__items-place {
+		@extend .span8;
+		float: left;
+	}
+
+	.b-app__friends-panel-place {
+		@extend .span4;
+		float: left;
+	}
+
+
+

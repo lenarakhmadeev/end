@@ -1,0 +1,31 @@
+
+@import "bootstrap/bootstrap";
+@import "bootstrap/responsive";
+
+.b-items-list {
+
+}
+
+	.b-item {
+		@extend .span4;
+		float: left;
+
+		@include border-radius(5px);
+		border: 1px solid #aaaaaa;
+
+	}
+
+	.b-item_selected {
+		border: 1px red solid;
+	}
+
+		.b-item__image {
+			@extend .img-polaroid;
+
+			@include square(100px);
+
+		}
+
+		.b-item__title {
+			text-align: center;
+		}
